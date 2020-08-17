@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener('submit', createNewTask)
 });
 
-function createNewTask(a) {
+function createNewTask(event) {
   const userInput = document.getElementById('new-task-description').value
   
   console.log(userInput)
-  a.preventDefault()
+  event.preventDefault()
   const li = document.createElement('li')
   li.innerText = userInput
   
