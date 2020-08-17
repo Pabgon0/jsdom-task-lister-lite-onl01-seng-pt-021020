@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const form = document.querySelector('#create-task-form')
+  const newTaskForm = document.getElementById("create-task-form");
+  const newTaskDescription = document.getElementById("new-task-description");
+  const newTaskPriority = document.getElementById("new-task-priority");
 
-  form.addEventListener('submit', getUserInput)
+  const newTaskUl = document.getElementById("tasks");
 
+  newTaskForm.addEventListener("submit", createNewTask);
 });
 
 const createNewTask = event => {
