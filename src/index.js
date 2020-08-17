@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-function getUserInput(a) {
+function createNewTask(a) {
   const userInput = document.getElementById('new-task-description').value
   
   console.log(userInput)
