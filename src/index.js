@@ -6,17 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-const createNewTask = event => {
-  event.preventDefault();
-
-  const newTaskDescription = document.getElementById("new-task-description");
-  const newTask = document.createElement("li");
-  newTask.innerText = newTaskDescription.value;
-
-  appendNewTask(newTask);
-  event.target.reset();
-};
-
-const appendNewTask = task => {
-  document.getElementById("tasks").appendChild(task);
-};
+function getUserInput(a) {
+  const userInput = document.getElementById('new-task-description').value
+  
+  console.log(userInput)
+  a.preventDefault()
+  const li = document.createElement('li')
+  li.innerText = userInput
+  
+  document.getElementById('tasks').appendChild(li)
+}
