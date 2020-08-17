@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.querySelector('#create-task-form')
 
-  form.addEventListener('submit', getUserInput)
+  form.addEventListener('submit', createNewTask)
 
 });
 
